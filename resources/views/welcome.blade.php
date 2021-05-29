@@ -23,11 +23,12 @@
             }
         </style>
     </head>
+
     <body class="antialiased">
 
        <div id="app">
 
-        <example-component>I am an example</example-component>
+        <app-component></app-component>
 
        </div>
 

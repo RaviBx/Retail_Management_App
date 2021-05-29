@@ -82,9 +82,6 @@ Route::post('/dailytask', function(Request $request){
     });
 
 
-
-
-
 });
 
 
