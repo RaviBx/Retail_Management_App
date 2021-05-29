@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Resources\UpcomingTaskResource;
+use App\Models\Today;
 use App\Models\Upcoming;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -57,7 +58,34 @@ Route::delete('/upcoming/{taskID}', function($taskID){
 
 // ** Today Task ** //
 
+Route::post('/dailytask', function(Request $request){
 
+
+    //Add a new task
+    return Today::create([
+
+        'id'    =>  $request->id,
+        'title' =>  $request->title,
+        'taskID'=>  $request->taskID
+
+    ]);
+
+
+    //Delete task
+
+    Route::delete('/dailytask/{taskID}', function ($taskID) {
+
+
+        DB::table('todays')->where('taskID', $taskID)->delete();
+        return 204;
+        
+    });
+
+
+
+
+
+});
 
 
 
