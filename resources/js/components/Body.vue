@@ -1,42 +1,19 @@
 <template>
-    
-    <div id ="body">
-        
-        
-            <LeftBody/>
-
-            <RightBody/>
-        
-        
-    </div>     
+  
+        <div><h1>Body</h1></div>
 
 </template>
 
-
-
 <script>
-import LeftBody from './LeftBody';
-import RightBody from './RightBody';
 
-    export default  {
-
-
-  components: { 
-      
-      LeftBody,
-      RightBody, 
-  
-  
-  },
-  
-  
-  };
-
+export default {};
+    
 </script>
+
 
 
 <style>
 
 </style>
 
-    
+

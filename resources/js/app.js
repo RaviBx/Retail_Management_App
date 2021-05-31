@@ -1,13 +1,12 @@
-//const { mixin } = require('vue/types/umd');
 
 
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue').default;
+window.Vue = require("vue");
 
 
-Vue.component('app-component', require("./components/App.vue").default);
-Vue.component('body-component', require("./components/Body.vue").default);
+Vue.component("app-component", require("./components/App.vue").default);
+Vue.component("body-component", require("./components/Body.vue").default);
 
 
 
